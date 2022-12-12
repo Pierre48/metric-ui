@@ -3,20 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "metric-server-sample", "metric-server-sample\metric-server-sample.csproj", "{5C3DDC95-ECC1-49C6-804A-02E94EF40085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "metric-server-sample", "metric-server-sample\metric-server-sample.csproj", "{5C3DDC95-ECC1-49C6-804A-02E94EF40085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "metric-ui", "metric-ui\metric-ui.csproj", "{76A58A05-727F-4D2F-9458-3493298D0C03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5C3DDC95-ECC1-49C6-804A-02E94EF40085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C3DDC95-ECC1-49C6-804A-02E94EF40085}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C3DDC95-ECC1-49C6-804A-02E94EF40085}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C3DDC95-ECC1-49C6-804A-02E94EF40085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A58A05-727F-4D2F-9458-3493298D0C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A58A05-727F-4D2F-9458-3493298D0C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A58A05-727F-4D2F-9458-3493298D0C03}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{76A58A05-727F-4D2F-9458-3493298D0C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A58A05-727F-4D2F-9458-3493298D0C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A58A05-727F-4D2F-9458-3493298D0C03}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCFCF6BD-BECA-4DA1-8719-A1234E63553B}
 	EndGlobalSection
 EndGlobal

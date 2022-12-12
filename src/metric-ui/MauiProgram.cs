@@ -20,8 +20,24 @@ namespace metric_ui
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+
+            return builder.RegisterAppServices()
+                        .RegisterViewModels()
+                        .Build();
+        }
+
+        public static MauiAppBuilder RegisterAppServices(this MauiAppBuilder builder)
+        {
+            builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MetricScrapperService>();
-            return builder.Build();
+            return builder;
+        }
+
+        public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder mauiAppBuilder)
+        {
+            mauiAppBuilder.Services.AddSingleton<ViewModels.MainViewModel>();
+
+            return mauiAppBuilder;
         }
     }
 }
